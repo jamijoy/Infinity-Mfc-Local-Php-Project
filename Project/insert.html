@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>My Example</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+border: 1px solid #ccc;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm form {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm label {
+text-align: left;
+display: block;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+float: right;
+width: 60%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+margin-left: 40%;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 40%;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+<li class="current"><a class="smoothscroll" href="index.html" title="">Home</a></li>
+
+<form class="myForm" method="post" enctype="application/x-www-form-urlencoded" action="insertdata.php">
+
+<legend>Which rank do you want to select?</legend>
+<fieldset id="group1"><label class="choice"> <input type="radio" name="rank" required value="R-123"> R-123 </label>
+<label class="choice"> <input type="radio" name="rank" required value="R-187"> R-187 </label>
+<label class="choice"> <input type="radio" name="rank" required value="R-190">R-190 </label></fieldset>
+
+
+<legend>Which Branch do you want to select?</legend>
+<fieldset id="group2"><label class="choice"> <input type="radio" name="branch" required value="B-008"> B-008 </label>
+<label class="choice"> <input type="radio" name="branch" required value="B-009"> B-009 </label>
+<label class="choice"> <input type="radio" name="branch" required value="B-010">B-010 </label></fieldset>
+
+
+
+<legend>Which Mission do you want to select?</legend>
+<fieldset id="group3"><label class="choice"> <input type="radio" name="mission" required value="M-1212"> M-1212 </label>
+<label class="choice"> <input type="radio" name="mission" required value="M-1826"> M-1826 </label>
+<label class="choice"> <input type="radio" name="mission" required value="M-1998">M-1998 </label></fieldset>
+
+<p>
+<label>Name
+<input type="text" name="name" required>
+</label> 
+</p>
+
+<p>
+<label>Age
+<input type="text" name="age" required>
+</label> 
+</p>
+
+<p>
+<label>Adress
+<input type="text" name="adress" required>
+</label> 
+</p>
+
+<p>
+<label>Gender
+<input type="text" name="gender" required>
+</label> 
+</p>
+
+
+
+<p><button>Insert Data</button></p>
+
+</form>
+
+</body>
+</html>
