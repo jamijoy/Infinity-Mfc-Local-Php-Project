@@ -87,20 +87,20 @@ cursor: pointer;
 <form class="myForm" method="post" enctype="application/x-www-form-urlencoded" action="insertdata.php">
 
 <legend>Which rank do you want to select?</legend>
-<fieldset id="group1"><label class="choice"> <input type="radio" name="rank" required value="R-123"> R-123 </label>
+<fieldset id="group1"><label class="choice"> <input type="radio" name="rank" required value="R-123" checked> R-123 </label>
 <label class="choice"> <input type="radio" name="rank" required value="R-187"> R-187 </label>
 <label class="choice"> <input type="radio" name="rank" required value="R-190">R-190 </label></fieldset>
 
 
 <legend>Which Branch do you want to select?</legend>
-<fieldset id="group2"><label class="choice"> <input type="radio" name="branch" required value="B-008"> B-008 </label>
+<fieldset id="group2"><label class="choice"> <input type="radio" name="branch" required value="B-008" checked> B-008 </label>
 <label class="choice"> <input type="radio" name="branch" required value="B-009"> B-009 </label>
 <label class="choice"> <input type="radio" name="branch" required value="B-010">B-010 </label></fieldset>
 
 
 
 <legend>Which Mission do you want to select?</legend>
-<fieldset id="group3"><label class="choice"> <input type="radio" name="mission" required value="M-1212"> M-1212 </label>
+<fieldset id="group3"><label class="choice"> <input type="radio" name="mission" required value="M-1212" checked> M-1212 </label>
 <label class="choice"> <input type="radio" name="mission" required value="M-1826"> M-1826 </label>
 <label class="choice"> <input type="radio" name="mission" required value="M-1998">M-1998 </label></fieldset>
 
@@ -117,14 +117,17 @@ cursor: pointer;
 </p>
 
 <p>
-<label>Adress
+<label>Address
 <input type="text" name="adress" required>
 </label> 
 </p>
 
 <p>
 <label>Gender
-<input type="text" name="gender" required>
+<select name="gender">
+	<option value="male">Male</option>
+	<option value="female">Female</option>
+</select>
 </label> 
 </p>
 
